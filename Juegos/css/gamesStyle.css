@@ -1,0 +1,216 @@
+#counter {
+    width: 15%;
+    height: 120px;
+    background-color: #ccffff;
+    position: absolute;
+    right: 100px;
+    font-size: 23px;
+    top: 119px;
+
+}
+
+#counterP {
+    text-align: center;
+}
+
+#counterTitle {
+    text-align: center;
+}
+
+main{
+    width: 960px;
+    height: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#horseGame {
+    display: flex;
+    flex-direction: column;
+}
+
+#progressBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    width: 80%;
+    height: 400px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    width: 80%;
+    height: 150px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.contentWelcome {
+    height: 70px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contentWelcome h1 {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+#horseRacing h1 {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+#horseRacing h3 {
+    margin: 0 auto;
+    width: 67%;
+    font-size: 1.2rem;
+    padding-top: 6px;
+}
+
+.contentWelcome h3 {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 1.2rem;
+    padding-top: 6px;
+}
+
+#contentGameHorse {
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    background-image: url(https://media.istockphoto.com/photos/abstract-triangle-mosaic-background-horseracing-track-picture-id1153866635);
+    background-size: contain;
+    background-position: top;
+}
+
+#contentGameHorse div {
+    width: 95%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: 25px;
+    left: 15px;
+}
+
+.fa-horse-head {
+    font-size: 60px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+
+.contentButton {
+    margin: 0 auto;
+    height: 80px;
+    width: 80px;
+}
+
+.contentButton button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #037bfc;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.contentButton #start {
+    background-color: red;;
+}
+
+.contentButton #start1 {
+    background-color: red;;
+}
+
+.contentButton button:focus { 
+    outline: none; 
+}
+
+
+
+.contentInformation {
+    margin: 0 auto;
+    width: 340px;
+}
+
+.contentInformation p {
+    font-size: 1.1rem;
+    margin-left: 30px;
+}
+
+.score {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.contentButtons {
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.again {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 75px;
+    top: 5px;
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+.finish {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 115px;
+    top: 5px;
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+.again span {
+    font-size: 35px;
+    color: blue;
+}
+
+.finish span {
+    font-size: 35px;
+    color: red;
+}
+
+#contentGameBar {
+    width: 90%; 
+    background-color: #ddd;
+    margin: 0 auto;
+}
+
+#myprogressBar {
+    width: 0%; 
+    height: 35px; 
+    background-color: #4CAF50; 
+    text-align: center; 
+    line-height: 32px; 
+    color: black;
+}

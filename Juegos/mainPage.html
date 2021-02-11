@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini games</title>
+    <link rel="stylesheet" href="css/mainpageStyle.css">
+    <link rel="stylesheet" href="css/gamesStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/mainPageFuncionality.js" defer></script>
+    <script src="js/HorseGameFuncionality.js" defer></script>
+    <script src="js/porgressBarGameFuncionality.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>Sastre Game Side</p>
+            <div id="search">
+                <input id="placeholder" type="text" placeholder="Buscar juegos o usuarios">
+            </div>
+            <div id="icon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div id="login">
+                <button>
+                    <span class="material-icons">
+                        person
+                    </span>
+                    <span id="entry" class="entry">
+                        Entrar
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="Containernotifications" class="hidden">
+        <h3 id="not">No hay nuevas notificaciones</h3>
+    </section>
+    <section id="containerLogin" class="hidden">
+        <div id="step1">
+            <h3 id="counttitle">Crea tu cuenta de Minijuegos</h3>
+            <span id="free">¡ES GRATIS!</span>
+        </div>
+        <form id="myForm" name="myForm">
+            <input id="placeholder1" type="email" name="fmail" placeholder="Email">
+            <p id="validateEmail" class="validate hidden">Inserte un email correcto</p>
+            <input id="placeholder2" type="text" name="fname" placeholder="Nombre de usuario">
+            <p id="validateName" class="validate hidden">Inserte un nombre de usuario</p>
+            <input id="placeholder3" type="password" name="fpassword" placeholder="Contraseña">
+            <p id="validatePassword" class="validate hidden">Inserte una contraseña</p>
+        </form>
+        <div id="step3">
+            <button id="ready">¿Ya tienes cuenta?</button>
+            <button id="continue">Continuar</button>
+        </div>
+    </section>
+
+    <section id="containerLoginReady" class="hidden">
+        <h3>Introduce tus datos</h3>
+        <form id="myForm1" name="myForm1">
+            <input type="text" name="fname1" placeholder="Nombre de usuario">
+            <p id="validateName" class="validate hidden">Inserte un nombre de usuario</p>
+            <input type="password" name="fpassword1" placeholder="Contraseña">
+            <p id="validatePassword" class="validate hidden">Inserte una contraseña</p>
+        </form>
+        <div id="step4">
+            <button id="continue1">Continuar</button>
+        </div>
+    </section>
+
+    <main>
+        <section id="plays"></section>
+
+        <section id="horseGame" class="hidden">
+            <div id="counter" class="hidden">
+                <p id="counterTitle">Time</p>
+                <p id="counterP"></p>
+            </div>
+            <section class="flex-container1">
+                <div class="contentWelcome" id="horseRacing">
+                    <h1>HORSE RACING</h1>
+                    <h3>Bienvenido <span id="currentlyuserhorse"></span></h3>
+                </div>
+                <div id="contentGameHorse">
+                    <i id="horse" class="fas fa-horse-head"></i>
+                    <div></div>
+                </div>
+                <div class="contentButton">
+                    <button id="start">START</button>
+                    <button id="push" class="hidden">PUSH</button>
+                </div>
+            </section>
+            <section class="flex-container2">
+                <div class="contentInformation">
+                    <p>Tu puntuación ha sido de <span id="score" class="score hidden"></span></p>
+                </div>
+                <div class="contentButtons">
+                    <button id="again" class="again">
+                        <span class="material-icons">
+                            replay
+                        </span>
+                    </button>
+                    <button id="finish" class = "finish">
+                        <span class="material-icons">
+                            close
+                        </span>
+                    </button>
+                </div>
+            </section>
+        </section>
+
+        <section id="progressBar" class="hidden">
+            <section class="flex-container1">
+                <div class="contentWelcome">
+                    <h1>PROGRESS BAR GAME</h1>
+                    <h3>Bienvenido <span id="currentlyuserbar"></span></h3>
+                </div>
+                <div id="contentGameBar">
+                    <div id="myprogressBar"></div> 
+                </div>
+                <div class="contentButton">
+                    <button id="start1">START</button>
+                    <button id="stop" class="hidden">STOP</button>
+                </div>
+            </section>
+            <section class="flex-container2">
+                <div class="contentButtons">
+                    <button id="again1" class="again">
+                        <span class="material-icons">
+                            replay
+                        </span>
+                    </button>
+                    <button id="finish1" class="finish">
+                        <span class="material-icons">
+                            close
+                        </span>
+                    </button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div id="containerLenguagesButtons">
+            <button class="languages spanish"></button>
+            <button class="languages english"></button>
+            <button class="languages german"></button>
+            <button class="languages portuguese"></button>
+            <button class="languages france"></button>
+            <button class="languages italian"></button>
+        </div>
+        <div id="containerSocialButtons">
+            <button class="social">
+                <i class="fab fa-facebook" onclick="window.location='https://www.facebook.com';"></i>
+            </button>
+            <button class="social">
+                <i class="fab fa-twitter" onclick="window.location='https://twitter.com';"></i>
+            </button>
+            <button class="social" onclick="window.location='https://www.instagram.com';">
+                <i class="fab fa-instagram"></i>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>

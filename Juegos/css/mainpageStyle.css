@@ -1,0 +1,458 @@
+.hidden {
+    display: none !important;
+}
+
+body {
+    font-size: 12px;
+    margin: 0px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSpfTG8GQN9AwsCA1unxRIpQHT3dY5hiJMb1g&usqp=CAU);
+}
+
+nav {
+    background-color: #2F3237;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+}
+
+nav p {
+    margin: 0px;
+    color:white;
+    position: absolute;
+    top: 20px;
+    left: 190px;
+    font-size: 1.5rem;
+}
+
+#search {
+    position: absolute;
+    top: 25px;
+    left: 390px;
+}
+
+#search input {
+    background-color: #25272b;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 -1px rgba(0,0,0,.3);
+    color: #89949b;
+    font-size: 13px;
+    font-weight: normal;
+    height: 40px;
+    margin-bottom: 0;
+    padding: 0 28px 0 12px;
+    transition: width .2s ease-out,background-color .2s ease-out;
+    -webkit-transition: width .2s ease-out,background-color .2s ease-out;
+    width: 180px;
+    position: absolute;
+    top: -8px;
+}
+
+#icon {
+    font-size: 1.7rem;
+    width: 50px;
+    position: absolute;
+    right: 415px;
+    top: 20px;
+}
+
+.fa-bell {
+    color: #FFCC7B;
+    -webkit-animation: ring 4s .7s ease-in-out infinite;
+    -webkit-transform-origin: 50% 4px;
+    -moz-animation: ring 4s .7s ease-in-out infinite;
+    -moz-transform-origin: 50% 4px;
+    animation: ring 4s .7s ease-in-out infinite;
+    transform-origin: 50% 4px;
+}
+
+@-webkit-keyframes ring {
+    0% { -webkit-transform: rotateZ(0); }
+    1% { -webkit-transform: rotateZ(30deg); }
+    3% { -webkit-transform: rotateZ(-28deg); }
+    5% { -webkit-transform: rotateZ(34deg); }
+    7% { -webkit-transform: rotateZ(-32deg); }
+    9% { -webkit-transform: rotateZ(30deg); }
+    11% { -webkit-transform: rotateZ(-28deg); }
+    13% { -webkit-transform: rotateZ(26deg); }
+    15% { -webkit-transform: rotateZ(-24deg); }
+    17% { -webkit-transform: rotateZ(22deg); }
+    19% { -webkit-transform: rotateZ(-20deg); }
+    21% { -webkit-transform: rotateZ(18deg); }
+    23% { -webkit-transform: rotateZ(-16deg); }
+    25% { -webkit-transform: rotateZ(14deg); }
+    27% { -webkit-transform: rotateZ(-12deg); }
+    29% { -webkit-transform: rotateZ(10deg); }
+    31% { -webkit-transform: rotateZ(-8deg); }
+    33% { -webkit-transform: rotateZ(6deg); }
+    35% { -webkit-transform: rotateZ(-4deg); }
+    37% { -webkit-transform: rotateZ(2deg); }
+    39% { -webkit-transform: rotateZ(-1deg); }
+    41% { -webkit-transform: rotateZ(1deg); }
+  
+    43% { -webkit-transform: rotateZ(0); }
+    100% { -webkit-transform: rotateZ(0); }
+}
+  
+  @-moz-keyframes ring {
+    0% { -moz-transform: rotate(0); }
+    1% { -moz-transform: rotate(30deg); }
+    3% { -moz-transform: rotate(-28deg); }
+    5% { -moz-transform: rotate(34deg); }
+    7% { -moz-transform: rotate(-32deg); }
+    9% { -moz-transform: rotate(30deg); }
+    11% { -moz-transform: rotate(-28deg); }
+    13% { -moz-transform: rotate(26deg); }
+    15% { -moz-transform: rotate(-24deg); }
+    17% { -moz-transform: rotate(22deg); }
+    19% { -moz-transform: rotate(-20deg); }
+    21% { -moz-transform: rotate(18deg); }
+    23% { -moz-transform: rotate(-16deg); }
+    25% { -moz-transform: rotate(14deg); }
+    27% { -moz-transform: rotate(-12deg); }
+    29% { -moz-transform: rotate(10deg); }
+    31% { -moz-transform: rotate(-8deg); }
+    33% { -moz-transform: rotate(6deg); }
+    35% { -moz-transform: rotate(-4deg); }
+    37% { -moz-transform: rotate(2deg); }
+    39% { -moz-transform: rotate(-1deg); }
+    41% { -moz-transform: rotate(1deg); }
+  
+    43% { -moz-transform: rotate(0); }
+    100% { -moz-transform: rotate(0); }
+}
+  
+  @keyframes ring {
+    0% { transform: rotate(0); }
+    1% { transform: rotate(30deg); }
+    3% { transform: rotate(-28deg); }
+    5% { transform: rotate(34deg); }
+    7% { transform: rotate(-32deg); }
+    9% { transform: rotate(30deg); }
+    11% { transform: rotate(-28deg); }
+    13% { transform: rotate(26deg); }
+    15% { transform: rotate(-24deg); }
+    17% { transform: rotate(22deg); }
+    19% { transform: rotate(-20deg); }
+    21% { transform: rotate(18deg); }
+    23% { transform: rotate(-16deg); }
+    25% { transform: rotate(14deg); }
+    27% { transform: rotate(-12deg); }
+    29% { transform: rotate(10deg); }
+    31% { transform: rotate(-8deg); }
+    33% { transform: rotate(6deg); }
+    35% { transform: rotate(-4deg); }
+    37% { transform: rotate(2deg); }
+    39% { transform: rotate(-1deg); }
+    41% { transform: rotate(1deg); }
+  
+    43% { transform: rotate(0); }
+    100% { transform: rotate(0); }
+}
+
+#login {
+    width: 125px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 25px;
+    position: absolute;
+    right: 285px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#login > button {
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.entry {
+    position: relative;
+    bottom: 5px;
+    padding-left: 10px;
+}
+
+section {
+    display: flex;
+    background-color: #F5F5F5;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    justify-content: space-around;
+}
+
+.container {
+    width: 400px;
+    background-color: white;
+    margin: 20px;
+}
+
+.gameCard {
+    background-size: contain;
+    height: 250px;
+    width: 100%;
+}
+
+.info {
+    height: 150px;
+    background-color: white;
+    font-size: 16px;
+    padding: 16px;
+    text-align: end;
+    position: relative;
+}
+
+.description {
+    color: black;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    position: absolute;
+    bottom: 35px;
+    right: 175px;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 30px;
+    background: black;
+    color: white;
+}
+
+
+
+footer {
+    background-color:  #2F3237;
+    height: 200px;
+}
+
+#containerLenguagesButtons {
+    margin: 0 auto;
+    width: 25%;
+}
+
+.languages {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+    border: none;
+}
+
+.spanish {
+    background-image: url(https://s3.minijuegosgratis.com/media/flags/flag_es.png);
+    background-size: cover;
+}
+
+.english {
+    background-image: url(https://s3.minijuegosgratis.com/media/flags/flag_en.png);
+    background-size: cover;
+}
+
+.german {
+    background-image: url(https://images.assetsdelivery.com/compings_v2/jenjawin/jenjawin1904/jenjawin190400779.jpg);
+    background-size: cover;
+}
+
+.portuguese {
+    background-image: url(https://s3.minijuegosgratis.com/media/flags/flag_br.png);
+    background-size: cover;
+}
+
+.france {
+    background-image: url(https://s3.minijuegosgratis.com/media/flags/flag_nl.png);
+    background-size: cover;
+}
+
+.italian {
+    background-image: url(https://s3.minijuegosgratis.com/media/flags/flag_it.png);
+    background-size: cover;
+}
+
+#containerSocialButtons {
+    margin: 0 auto;
+    width: 15%;
+    margin-top: 40px;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+#containerSocialButtons button:nth-child(1) {
+    background-color: #0E91F3;
+}
+
+#containerSocialButtons button i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#containerSocialButtons button:nth-child(2) {
+    background-color: #1E8DD2;
+}
+
+#containerSocialButtons button:nth-child(3) {
+    background-color: #D62D6C;
+}
+
+#Containernotifications {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    z-index: 999;
+    background-color: #2F3237;
+    right: 380px;
+    top: -25px;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Containernotifications h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+
+
+#containerLogin {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    right: 570px;
+    top: 50px;
+    background-color: #2F3237;
+}
+
+#containerLogin form {
+    display: flex;
+    flex-direction: column;
+}
+
+#containerLogin form > input {
+    margin: 20px;
+    height: 25px;
+    width: 200px;
+}
+
+.validate {
+    background-color: burlywood;
+    height: 25px;
+    width: 207px;
+    margin-left: 20px;
+    margin-top: -10px;
+    font-size: 1.01rem;
+    text-align: center;
+
+}
+
+#step1 {
+    margin: 0 auto;
+}
+
+#step1 h3,span {
+    font-size: 1.2rem;
+    
+}
+
+#step1 span {
+    color: red;
+    margin: 0 auto;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+#step1 h3 {
+    color: white;
+}
+
+#step3 {
+    margin: 0 auto;
+}
+
+#step3 button:nth-child(1) {
+    font-size: 0.9rem;
+    margin-right: 50px;
+    background: none;
+	color: white;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#step3 button {
+    height: 50px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#containerLoginReady {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    right: 570px;
+    top: 50px;
+    background-color: #2F3237;
+}
+
+#containerLoginReady h3 {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+
+#containerLoginReady form {
+    display: flex;
+    flex-direction: column;
+}
+
+#containerLoginReady form > input {
+    margin: 20px;
+    height: 25px;
+    width: 200px;
+}
+
+#step4 {
+    margin: 0 auto;
+}
+
+#step4 button:nth-child(1) {
+    height: 50px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
